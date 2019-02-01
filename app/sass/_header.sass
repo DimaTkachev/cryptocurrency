@@ -1,0 +1,133 @@
+.header
+  box-shadow: 0 0 30px 8px #d3dbe1
+  background-color: #fff
+  position: relative
+  z-index: 3  
+
+.container-fluid
+  padding-top: 15px
+  margin-right: auto
+  margin-left: auto
+  max-width: 1520px
+
+/* Header-top-line */ 
+
+.header-top-label
+  background-color: #0087B9
+
+.header-top-logo p
+  font-size: 1.0625rem
+  color: #7691a6
+
+
+.header-top-social .soc-box
+  padding: 0
+  margin: 0
+  text-align: right
+  li
+    a i
+      color: #A5B8C4
+      font-size: 2.1875rem
+      &:hover
+        color: #2a2a2a
+    &:not(:first-child)
+      padding-left: 26px
+    display: inline-block
+
+.header-top-rates
+  position: absolute
+  bottom: 15px
+  right: 0
+  >li
+    display: inline-block
+    .fa-sort-down
+      position: relative
+      bottom: 2px
+      color: red
+    .fa-sort-up
+      position: relative
+      top: 2px
+      color: green
+    &:nth-child(odd)
+      padding-right: 5px
+      padding-left: 17px
+  .rates-item-currency
+    font-weight: bold   
+  
+/* m-menu */
+
+.m-menu
+  margin: 0
+  padding: 0
+
+.m-menu-item
+  display: inline-block
+  > a
+    font-size: 1.125rem
+    text-align: center
+    color: #2a2a2a
+    text-transform: uppercase
+    display: block
+    height: 50px
+    line-height: 50px
+    font-weight: bold
+    text-decoration: none
+    outline: 0
+    &.active, &:hover
+      color: $text-hover
+      border-bottom: 5px solid #5a778a
+
+.nav-bottom > ul > li
+  padding: 0 20px
+  &:first-child
+    padding-left: 0
+
+
+
+  
+/*Header-form */
+
+.header-form-container
+  text-align: right
+
+.header-search-input
+  width: 67.5%
+  border: none
+  border-bottom: 1px solid #d3dbe1
+  font-size: 0.875rem
+  height: 37px
+
+.header-form button
+  outline: 0
+  background: none
+  border: none
+  cursor: pointer
+  padding: 0
+
+/* sub-menu */
+
+.sub-menu
+  position: absolute
+  width: 129.5%
+  box-shadow: 0px 3px 30px 0px #a5b8c4
+  padding: 13px
+  background: #fff
+  z-index: 3
+  left: 0
+  > ul > li
+    display: inline-block
+    padding: 0 25px
+    > a
+      font-size: 0.875rem
+      text-align: center
+      color: #2a2a2a
+      text-transform: uppercase
+      display: block
+      height: 40px
+      line-height: 40px
+      font-weight: bold
+      text-decoration: none
+      outline: 0
+      &:hover
+        color: $text-hover
+        border-bottom: 3px solid #5a778a

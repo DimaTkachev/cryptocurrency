@@ -1,0 +1,84 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	font-family: $default-font
+	overflow-x: hidden
+	line-height: 1.15
+	color: $text
+	box-sizing: border-box;
+
+p
+	margin: 0
+
+a
+	color: $text
+	text-decoration: none
+	&:hover
+		color: $text			
+		text-decoration: none
+
+h1, h2, h3
+	font-family: "Ubuntu", sans-serif
+
+h1
+	font-size: 38px					
+
+li, form, input, div, header, span, section, table, a, textarea
+	box-sizing: border-box;
+	outline: 0;
+
+li
+	list-style: none
+
+ul
+	padding: 0
+	margin: 0		
+
+b, strong
+	font-weight: bold
+
+.btn-3d
+	box-shadow: 0 5px 15px 0 #f3cc95
+
+.button
+	background-color: $accent
+	text-align: center
+	border-radius: 3px
+	display: block
+	height: 60px
+	line-height: 60px
+	color: #fff 
+	text-decoration: none !important
+	text-transform: uppercase
+	font-size: 18px
+	font-weight: bold
+	border: none
+	cursor: pointer
+	outline: none
+	&:hover
+		background-color: #fff
+		color: #5a778a
+
+
+
+@import "_header"
+
+@import "_main-content"	
+
+
+
+@import "media" // Always at the end
